@@ -13,11 +13,11 @@ public class StudentList {
      */
     public StudentList(String name, String address) {
         // Validation of input name
-        if (name == null || name.isBlank()) {
+        if (name == null || name.isEmpty()) {
             throw new IllegalArgumentException("Name must not be null or blank.");
         }
         // Validation of input address
-        if (address == null || address.isBlank()) {
+        if (address == null || address.isEmpty()) {
             throw new IllegalArgumentException("Address must not be null or blank.");
         }
 
@@ -37,7 +37,7 @@ public class StudentList {
 
     public void setAddress(String address) {
         // Validation of input address
-        if (address == null || address.isBlank()) {
+        if (address == null || address.isEmpty()) {
             throw new IllegalArgumentException("Address must not be null or blank.");
         }
         this.address = address;
@@ -55,7 +55,7 @@ public class StudentList {
      */
     public void addCourseGrade(String couse, int grade) {
         // Add validation for the course and grade
-        if (couse == null || couse.isBlank()) {
+        if (couse == null || couse.isEmpty()) {
             System.out.println("Error:Course name cannot be blank");
             return;
         }
