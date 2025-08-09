@@ -9,7 +9,7 @@ public class TestStudent {
     s1.printGrades();
     System.out.printf("Average Grade: %.2f\n", s1.getAverageGrade());
 
-    StudentList s2 = new StudentList("Kritpanit Teerakaittikul", "Pattanakarn 37");
+    StudentList s2 = new StudentList("Chaiyapat Paensuwan", "Pattanakarn 37");
     System.out.println(s2);
     s2.addCourseGrade("Math", 80);
     s2.addCourseGrade("Japanese", 90);
